@@ -6,156 +6,136 @@
   <title>에코스텝 청소년재단</title>
   <style>
     * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
+      margin:0; padding:0; box-sizing:border-box;
+      font-family: 'Poppins', sans-serif;
       scroll-behavior: smooth;
     }
-
     body {
-      overflow-x: hidden;
-      background-color: #F5FFF3;
+      background-color:#F5FFF3;
+      color:#2E6C3A;
     }
-
     header {
-      background-color: #7AC943;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: bold;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 999;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      position:fixed; top:0; width:100%;
+      background:#7AC943; color:white;
+      padding:15px; text-align:center;
+      font-size:1.5rem; z-index:100;
+      box-shadow:0 2px 4px rgba(0,0,0,0.1);
     }
-
     section {
-      min-height: 100vh;
-      padding: 100px 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
+      min-height:100vh;
+      padding:100px 20px 60px;
+      display:flex; flex-direction:column;
+      justify-content:center; align-items:center;
+      text-align:center;
     }
-
-    h1, h2 {
-      color: #2E6C3A;
-      margin-bottom: 20px;
+    h1 {
+      font-size:2.5rem; margin-bottom:20px;
     }
-
+    h2 {
+      font-size:2rem; margin-bottom:15px;
+    }
     p {
-      color: #444;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto 20px;
+      font-size:1.1rem; line-height:1.6;
+      max-width:700px; margin-bottom:30px;
     }
-
     .btn {
-      background-color: #7AC943;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      border-radius: 25px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.3s ease;
+      display:inline-block;
+      padding:12px 24px;
+      background:#7AC943; color:white;
+      border:none; border-radius:30px;
+      font-size:1rem;
+      cursor:pointer;
+      transition: background 0.3s, transform 0.3s;
+      text-decoration:none;
     }
-
     .btn:hover {
-      background-color: #66B536;
-      transform: translateY(-3px);
+      background:#66B536;
+      transform:translateY(-4px);
     }
-
     .section-intro {
-      background: url('https://images.unsplash.com/photo-1520466809213-7b9a56ad1c62') no-repeat center/cover;
-      color: white;
-      position: relative;
+      background:url('https://images.unsplash.com/photo-1520466809213-7b9a56ad1c62?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      position:relative;
+      color:white;
     }
-
     .section-intro::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(34, 75, 24, 0.6);
+      content:""; position:absolute; top:0; left:0;
+      width:100%; height:100%;
+      background:rgba(46,108,58,0.6);
     }
-
     .section-intro * {
-      position: relative;
-      z-index: 1;
+      position:relative; z-index:1;
     }
-
     footer {
-      background-color: #2E6C3A;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      background:#2E6C3A; color:white;
+      padding:20px; text-align:center;
+      font-size:0.9rem;
+    }
+    /* 약간의 작고 귀여운 아이콘 느낌 */
+    .icon-small {
+      font-size:1.4rem; margin-right:8px;
     }
   </style>
 </head>
 <body>
 
-<header>🌱 에코스텝 청소년재단</header>
+<header>🌿 에코스텝 청소년재단</header>
 
 <section class="section-intro">
   <h1>작은 발걸음이 지구를 살립니다</h1>
-  <p>우리가 함께하는 작은 행동들이, 지구의 미래를 바꿉니다.  
-    에코스텝 청소년재단과 함께 친환경 실천을 시작해보세요!
-  </p>
-  <button class="btn" onclick="scrollToSection('#activity')">핵심 활동 보러가기</button>
+  <p>우리의 작은 행동 하나하나가 지구에게는 큰 힘이 돼요. 함께 친환경 여정을 시작해요!</p>
+  <a class="btn" href="#activity">🔍 활동 보기</a>
 </section>
 
 <section id="activity">
-  <h2>🌿 주요 활동: 에코 발자국 챌린지</h2>
-  <p>
-    매달 진행되는 '에코 발자국 챌린지'는 <strong>탄소 발자국 줄이기 실천 캠페인</strong>입니다.<br>
-    일상 속에서 소소한 친환경 실천을 하고 참여 인증을 공유하는 방식으로 운영됩니다.
-  </p>
-  <button class="btn" onclick="scrollToSection('#campaign')">캠페인 참여하기</button>
+  <h2>🌱 주요 활동: 에코 발자국 챌린지</h2>
+  <p>한 달간 나의 생활습관을 돌아보고 친환경 실천을 해요.<br>
+     텀블러 사용, 도보/자전거 통학, 플라스틱 줄이기 등<br>
+     참여 인증하고 뱃지도 받고, 친구들과 이야기 나눠요!</p>
+  <a class="btn" href="#campaign">➡️ 캠페인 참여하기</a>
 </section>
 
-<section id="campaign">
+<section id="campaign" style="background:#E8FFF0;">
   <h2>👣 캠페인 참여 방법</h2>
-  <p>
-    1️⃣ 재단 공식 페이지에서 신청하기<br>
-    2️⃣ 매주 친환경 실천 활동을 인증하기 (사진/영상 업로드)<br>
-    3️⃣ 챌린지 완수 시 ‘에코 발자국 뱃지’ 및 인증서 발급<br>
-  </p>
-  <button class="btn" onclick="alert('캠페인 페이지는 곧 준비됩니다!')">참여 신청</button>
+  <p>1️⃣ 신청하기 → 2️⃣ 매주 실천 인증 → 3️⃣ 챌린지 완수 & 인증서 받기<br>
+     마음만 먹으면 누구나 시작할 수 있어요!</p>
+  <a class="btn" href="#news">📖 스토리 보러가기</a>
 </section>
 
 <section id="news">
-  <h2>📢 생태 뉴스 & 참가 스토리</h2>
-  <p>
-    📰 지구를 지키는 학생들의 목소리를 들어보세요!<br>
-    🌏 탄소 발자국을 줄인 다양한 사례와 생태 뉴스를 카드 형식으로 소개합니다. (게시판 예정)
-  </p>
-  <button class="btn" onclick="alert('스토리 게시판은 곧 업데이트됩니다!')">스토리 보기</button>
+  <h2>📢 뉴스 & 스토리</h2>
+  <p>친구들이 직접 참여한 이야기, 성공한 실천 사례, 생태 소식까지<br>
+     “나도 할 수 있겠다!”는 마음이 드는 콘텐츠들이 기다리고 있어요.</p>
+  <a class="btn" href="#support">💌 후원/문의</a>
 </section>
 
-<section id="support">
+<section id="support" style="background:#E8FFF0;">
   <h2>💌 후원 및 문의</h2>
-  <p>
-    에코스텝 청소년재단은 <strong>청소년 주도의 순수 비영리 활동</strong>입니다.<br>
-    여러분의 관심과 응원은 지속 가능한 환경 실천에 큰 힘이 됩니다.
-  </p>
-  <button class="btn" onclick="alert('문의하기: eco-step@foundation.org')">문의하기</button>
+  <p>여러분의 관심이 청소년의 작은 행동을 큰 변화로 만들어줘요.<br>
+     후원, 제휴, 봉사 등 궁금한 게 있다면 언제든지 이야기해 주세요!</p>
+  <a class="btn" href="mailto:eco-step@foundation.org">✉️ 메일 보내기</a>
 </section>
 
-<footer>
-  © 2025 에코스텝 청소년재단 | 모든 권리 보유
-</footer>
+<footer>© 2025 에코스텝 청소년재단 | 모든 권리 보유</footer>
 
 <script>
-  function scrollToSection(selector) {
-    document.querySelector(selector).scrollIntoView({
-      behavior: 'smooth'
+  // 스크롤 시 헤더 여백 보정
+  document.querySelectorAll('a.btn').forEach(btn=>{
+    btn.addEventListener('click', e=>{
+      e.preventDefault();
+      const href = btn.getAttribute('href');
+      if (href.startsWith('#')) {
+        const target = document.querySelector(href);
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 60,
+            behavior: 'smooth'
+          });
+        }
+      } else {
+        window.location = href;
+      }
     });
-  }
+  });
 </script>
 
 </body>
